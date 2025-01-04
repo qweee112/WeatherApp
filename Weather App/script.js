@@ -29,7 +29,7 @@ async function weatherCheck(key) {
     place.innerText = await data.name;
     windSpeed.innerText = await data.wind.speed;
     humidity.innerText = await data.main.humidity;
-    weatherIcon.style.background = `url(https://openweathermap.org/img/wn/${data['weather']['0']['icon']}@2x.png)`;
+    weatherIcon.style.background = `url(https://openweathermap.org/img/wn/${data['weather']['0']['icon']}@2x.png)`
   } else {
     loader.style.display = 'block';
   }
