@@ -113,8 +113,10 @@ button > i {
 .weather-img {
   height: 100px;
   width: 100px;
-  transform: scale(2);
+  image-rendering: auto;
+  filter: contrast(1.1) brightness(1.2);
   background-image: url("") no-repeat;
+  transform: scale();
   background-position: center;
   background-size: cover;
   position: absolute;

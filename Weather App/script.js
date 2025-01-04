@@ -13,16 +13,21 @@ const template = document.querySelector(".template");
 
 async function weatherCheck(key) {
   if(!searchBar.value) {
+    loader.style.display = 'none';
     template.style.height = '80px';
     document.querySelector(".cover-template").style.display = 'block';
+    return
   } else {
     template.style.height = '70%';
     document.querySelector(".cover-template").style.display = 'none';
   }
+
   const response = await fetch(apiURL + `&appid=${apiKey}` + `&q=${key}`);
 
   let data = await response.json();
-  console.log(data)
+
+  console.log(data);
+
   if (data.cod !== '404') {
     loader.style.display = 'none';
     temp.innerText = await data.main.temp;
@@ -31,7 +36,7 @@ async function weatherCheck(key) {
     humidity.innerText = await data.main.humidity;
     weatherIcon.style.background = `url(https://openweathermap.org/img/wn/${data['weather']['0']['icon']}@2x.png)`
   } else {
-    loader.style.display = 'block';
+    if(searchBar.value) loader.style.display = 'block';
   }
   
 }
