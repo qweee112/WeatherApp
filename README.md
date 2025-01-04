@@ -1,3 +1,3 @@
 # WeatherApp
-#### Video Demo:  <URL HERE>
+#### Video Demo: https://youtu.be/UZLZiguP5I4
 #### Description: This is a simple weather app that includes HTML, CSS, JavaScript in it's composure. It was disigned based on the OpenWeather API that is open source and free to use in their website. With CSS I was able to give my style to the project through color palettes that I carefully searched for. I added some animations and transitions and also a loading screen to make it look more thorough. It has images provided by OpenWeather that I use as the different weather patterns, making it more easy and clean to display the types. Throughout the development process, I aimed to make the app as user-friendly as possible. I focused on intuitive navigation and clear visual hierarchy to guide users effortlessly through the interface. Every design and functionality decision was made with the end-user in mind, ensuring that the app feels natural and easy to use.
